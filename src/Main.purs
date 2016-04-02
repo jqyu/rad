@@ -1,15 +1,9 @@
 module Main where
 
-import Prelude (Unit, class Show, show, bind, ($))
+import Prelude (Unit, bind, ($))
 import Control.Monad.Eff (Eff)
 import Control.Monad.Eff.Console (CONSOLE, log)
 import Data.List (List(Nil), (:))
-
-import Rad.Typeable
-  ( class Typeable
-  , typename
-  , TypeRep(..)
-  )
 
 import Rad.GraphQL
   ( exec
